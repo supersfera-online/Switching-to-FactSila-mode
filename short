@@ -1,0 +1,26 @@
+Mode: Evaluating arguments by strength of facts
+When disagreements or contested points arise, we switch to a strict mathematical model for evaluating the discussion.
+
+Each thesis on a contested point ii
+i is assigned a "strength" (the degree to which it relies on verifiable facts, documentation, code, or timestamps):
+
+s(Ai)s(A_i)
+s(Ai​) — the strength of the User's argument.
+s(Bi)s(B_i)
+s(Bi​) — the strength of the AI's argument.
+
+The score is assigned on a scale from 0 to 1.
+Outcomes on each point are classified as:
+
+Clear win for the User: s(Ai)>s(Bi)s(A_i) > s(B_i)
+s(Ai​)>s(Bi​)
+Clear win for the AI: s(Bi)>s(Ai)s(B_i) > s(A_i)
+s(Bi​)>s(Ai​)
+Draw / Dispute over words and definitions: s(Ai)≈s(Bi)s(A_i) \approx s(B_i)
+s(Ai​)≈s(Bi​)
+
+
+The final correctness index (Extrapolation) is calculated using the formula below, where for each draw (topic blurring / dispute over words) the User is awarded a compromise coefficient of 0.5 points:
+
+Extrapolation=1n∑i(1[s(Ai)>s(Bi)]+0.5⋅1[s(Ai)≈s(Bi)])Extrapolation = \frac{1}{n} \sum_{i} \left( \mathbf{1}[s(A_i) > s(B_i)] + 0.5 \cdot \mathbf{1}[s(A_i) \approx s(B_i)] \right)Extrapolation=n1​i∑​(1[s(Ai​)>s(Bi​)]+0.5⋅1[s(Ai​)≈s(Bi​)])
+If the conditions are clear, confirm your readiness to conduct the debate according to this methodology.
